@@ -263,7 +263,7 @@ globalkeys =
             end
         end),
 
-    -- kongo bindings
+    -- Custom bindings
     key({ modkey,           }, "f",     function () awful.util.spawn("firefox") end),
     key({ modkey,           }, "t",     function () awful.util.spawn("thunderbird") end),
     key({ modkey,           }, "n",     function () awful.util.spawn("mpc next") end),
@@ -501,12 +501,8 @@ end)
 -- }}}
 
 -- Initial execution of several functions
---cpubox.text = setFg(beautiful.fg_focus, "C: ")..cpuInfo()
---procbox.text = setFg(beautiful.fg_focus, "P: ")..procInfo()
 membox.text = setFg(beautiful.fg_focus, "M: ")..memInfo()
 fsbox.text = setFg(beautiful.fg_focus, "F: ")..fsInfo("/dev/sda4")
---netbox.text = setFg(beautiful.fg_focus, "N: ")..netInfo()
---mpdbox.text = setFg(beautiful.fg_focus, "MPD: ")..getMpd()
 datebox.text = os.date(" %d.%m.%y %H:%M ")
 
 -- Autostart .xinitrc
