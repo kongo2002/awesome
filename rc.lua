@@ -269,7 +269,7 @@ globalkeys =
     key({ modkey,           }, "n",     function () awful.util.spawn("mpc next") end),
 
     -- Standard program
-    key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
+    key({ modkey, "Shift"   }, "Return", function () awful.util.spawn(terminal) end),
     key({ modkey, "Control" }, "r", awesome.restart),
     key({ modkey, "Shift"   }, "q", awesome.quit),
 
